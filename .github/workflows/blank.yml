@@ -38,5 +38,7 @@ jobs:
       - name: Print environment variable
         run: |
            $triggers = "${{vars.TRIGGERS_TO_START}}" -SPLIT ","
-           echo "trigger=$triggers"
+           foreach ("$trigger in $triggers") {
+             echo "$trigger"
+           }
         
