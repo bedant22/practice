@@ -39,7 +39,6 @@ jobs:
         shell: pwsh
         run: |
            $triggers = "${{vars.TRIGGERS_TO_START}}" -SPLIT ","
-           foreach ("$trigger in $triggers") {
+           foreach ($trigger in $triggers) {
              $trigger
            }
-        
