@@ -37,5 +37,5 @@ jobs:
 
       - name: Print environment variable
         run: |
-           run: echo "${{ vars.API_URL }}"
+           run: echo "${{ vars.TRIGGERS_TO_START }}"
         
