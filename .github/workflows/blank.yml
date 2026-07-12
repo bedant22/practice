@@ -40,6 +40,6 @@ jobs:
         run: |
            $triggers = "${{vars.TRIGGERS_TO_START}}" -SPLIT ","
            foreach ("$trigger in $triggers") {
-             echo "$trigger"
+             "$trigger"
            }
         
